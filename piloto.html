@@ -10,6 +10,8 @@
 	<meta name ="keywords" content ="MotoGP, Moto, Miguel Oliveira" />
 	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="icon" href="multimedia/favicon_motogp.ico" type="image/x-icon">
+
 </head>
 
 <!-- Datos con el contenidos que aparece en el navegador -->
@@ -33,13 +35,13 @@
     
     <!--Foto del piloto-->
     <figure>
-        <img
-            alt = "Imagen del piloto"
-            src = "multimedia/miguel-oliveira-pramac-racing.jpg"
-        />
-        <figcaption> 
-            "Miguel Oliveira"
-        </figcaption>
+        <source srcset="multimedia/piloto_mobile.jpg" media="(max-width: 465px)">
+        <source srcset="multimedia/piloto_tablet.jpg" media="(max-width: 799px)">
+        <source srcset="multimedia/piloto_monitor.jpg" media="(min-width: 800px)">
+
+        <img alt = "Imagen del piloto" src = "multimedia/piloto_monitor.jpg"/>
+
+        <figcaption> "Miguel Oliveira" </figcaption>
     </figure>
 
     <!--Lista no ordenada de Datos del piloto-->
