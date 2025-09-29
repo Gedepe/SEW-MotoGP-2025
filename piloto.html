@@ -35,11 +35,14 @@
     
     <!--Foto del piloto-->
     <figure>
-        <source srcset="multimedia/piloto_mobile.jpg" media="(max-width: 465px)">
-        <source srcset="multimedia/piloto_tablet.jpg" media="(max-width: 799px)">
-        <source srcset="multimedia/piloto_monitor.jpg" media="(min-width: 800px)">
-
-        <img alt = "Imagen del piloto" src = "multimedia/piloto_monitor.jpg"/>
+        <picture>
+            <source srcset="multimedia/piloto_mobile.jpg" media="(max-width: 465px)">
+            <source srcset="multimedia/piloto_tablet.jpg" media="(max-width: 799px)">
+            <source srcset="multimedia/piloto_monitor.jpg" media="(min-width: 800px)">
+            
+            <!-- Fallback -->
+            <img src="multimedia/piloto_monitor.jpg" alt="Imagen del piloto">
+        </picture>
 
         <figcaption> "Miguel Oliveira" </figcaption>
     </figure>
