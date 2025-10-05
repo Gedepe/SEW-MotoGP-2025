@@ -1,3 +1,8 @@
 /* Pedro Diaz Gonzalez, UO294790*/
 
 /* Estilos generales del proyecto MotoGP-Desktop*/
+
+/* Especificidad: 0,0,1,0 */
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri;
+}
