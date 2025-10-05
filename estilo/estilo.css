@@ -4,5 +4,23 @@
 
 /* Especificidad: 0,0,1,0 */
 body {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  background-color: #1f1911;
+  color: #F4EBD0;
+}
+
+/* Especificidad: 0,0,1,0 */
+header {
+  background-color: #B68D40;
+  color: #F4EBD0;
+}
+
+/* Especificidad: 0,0,1,0 */
+h1 {
+  color: #122620;
+}
+
+/* Especificidad: 0,0,1,0 */
+nav a {
+  color: #122620;                 /* Cream: color de los enlaces en la barra de navegación */
+  text-decoration: none;
 }
