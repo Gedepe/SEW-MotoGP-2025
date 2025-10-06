@@ -12,5 +12,45 @@ nav {
 
 nav a {
   display: flex;
-  padding: 5px 10px;
+  padding: 10px 10px;
+}
+
+@media (max-width: 799px) {
+
+  /* Header en vertical (sobrescribiendo display: flex y justify-content) */
+  header {
+    display: flex;           /* redefinido para vertical */
+    flex-direction: column;  /* cambiar dirección de horizontal a vertical */
+    align-items: flex-start; /* alineación de elementos al inicio */
+    padding: 10px;           /* redefinido padding si es necesario */
+  }
+
+  /* h1 dentro del header (puede redefinir margen si fuera necesario) */
+  header h1 {
+    margin-bottom: 10px; /* separación vertical entre h1 y nav */
+  }
+
+  /* Nav en vertical (sobrescribiendo display: flex y gap) */
+  nav {
+    display: flex;           
+    flex-direction: column;  /* enlaces verticales */
+    gap: 5px;                /* redefinido espacio entre enlaces */
+  }
+
+  /* Enlaces del nav ocupan todo el ancho */
+  nav a {
+    width: 100%;             /* redefinido para que enlace ocupe toda la línea */
+    text-align: left;        /* opcional, para alinear texto a la izquierda */
+  }
+
+  /* Ocultar las migas de navegación en móviles */
+  .migas {
+    display: none;           /* redefinido para móviles */
+  }
+
+  /* Video y audio responsivos */
+  video, audio {
+    width: 100%;  /* redefinido para ocupar todo el ancho del contenedor */
+    height: auto; /* mantener proporción */
+  }
 }
