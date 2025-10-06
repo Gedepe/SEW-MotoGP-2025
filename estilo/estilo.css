@@ -2,25 +2,37 @@
 
 /* Estilos generales del proyecto MotoGP-Desktop*/
 
-/* Especificidad: 0,0,1,0 */
+/* Especificidad: 0,0,1 */
 body {
-  background-color: #1f1911;
-  color: #F4EBD0;
+  background-color: #433d35;
+  color: #efe5c9;
 }
 
-/* Especificidad: 0,0,1,0 */
+/* Especificidad: 0,0,1 */
 header {
-  background-color: #B68D40;
-  color: #F4EBD0;
+  background-color: #29241e;
+  color: #efe5c9;
 }
 
-/* Especificidad: 0,0,1,0 */
+header a{
+  text-decoration: none;
+}
+
+header + p{
+  font-size: 0.875rem;
+}
+
+nav a.active{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/* Especificidad: 0,0,1 */
 h1 {
-  color: #122620;
+  color: #efe5c9;
 }
 
-/* Especificidad: 0,0,1,0 */
+/* Especificidad: 0,0,1 */
 nav a {
-  color: #122620;                 /* Cream: color de los enlaces en la barra de navegación */
+  color: #efe5c9;
   text-decoration: none;
 }
