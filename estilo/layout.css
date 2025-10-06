@@ -17,7 +17,6 @@ nav a {
 
 @media (max-width: 799px) {
 
-  /* Header en vertical (sobrescribiendo display: flex y justify-content) */
   header {
     display: flex;           /* redefinido para vertical */
     flex-direction: column;  /* cambiar dirección de horizontal a vertical */
