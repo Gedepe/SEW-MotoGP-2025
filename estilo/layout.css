@@ -17,39 +17,36 @@ nav a {
 
 @media (max-width: 799px) {
 
+
   header {
-    display: flex;           /* redefinido para vertical */
-    flex-direction: column;  /* cambiar dirección de horizontal a vertical */
-    align-items: flex-start; /* alineación de elementos al inicio */
-    padding: 10px;           /* redefinido padding si es necesario */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
 
-  /* h1 dentro del header (puede redefinir margen si fuera necesario) */
   header h1 {
-    margin-bottom: 10px; /* separación vertical entre h1 y nav */
+    margin-bottom: 10px;
   }
 
-  /* Nav en vertical (sobrescribiendo display: flex y gap) */
+
   nav {
     display: flex;           
-    flex-direction: column;  /* enlaces verticales */
-    gap: 5px;                /* redefinido espacio entre enlaces */
+    flex-direction: column;
+    gap: 5px;
   }
 
-  /* Enlaces del nav ocupan todo el ancho */
   nav a {
-    width: 100%;             /* redefinido para que enlace ocupe toda la línea */
-    text-align: left;        /* opcional, para alinear texto a la izquierda */
+    width: 100%;
+    text-align: left;
   }
 
-  /* Ocultar las migas de navegación en móviles */
   .migas {
-    display: none;           /* redefinido para móviles */
+    display: none;
   }
 
-  /* Video y audio responsivos */
   video, audio {
-    width: 100%;  /* redefinido para ocupar todo el ancho del contenedor */
-    height: auto; /* mantener proporción */
+    width: 100%;  
+    height: auto; 
   }
 }
