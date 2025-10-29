@@ -1,0 +1,47 @@
+/* layout-cards.css */
+/* Estilos específicos para el grid del juego de memoria */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 1.5rem; /* separación entre cartas */
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* El encabezado del juego (h2) ocupa toda la primera fila */
+main > h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Cada carta (article) */
+main > article {
+    width: 90%;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        gap: 1.2rem;
+        padding: 1.5rem;
+    }
+
+    main > article {
+        width: 80%;
+        padding: 0.8em;
+        border-radius: 0.6em;
+    }
+
+    main > article img {
+        border-radius: 0.3em;
+    }
+}

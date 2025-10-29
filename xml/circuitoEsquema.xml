@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:circuito xmlns:xs="http://www.uniovi.es"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.uniovi.es circuito.xsd"
+             nombre="Red_Bull_Ring_Spielberg">
+    <xs:longitud_circuito metros="4318">4318</xs:longitud_circuito>
+    <xs:anchura metros="13">13</xs:anchura>
+    <xs:fecha>2025-08-17</xs:fecha>
+    <xs:hora_española>15:00:00</xs:hora_española>
+    <xs:num_vueltas>71</xs:num_vueltas>
+    <xs:localidad_mas_proxima>Spielberg, Estiria, Austria</xs:localidad_mas_proxima>
+    <xs:pais>Austria</xs:pais>
+    <xs:patrocinador>MSC Cruises Austrian Grand Prix</xs:patrocinador>
+
+    <xs:referencias>
+        <xs:referencia>https://en.wikipedia.org/wiki/Red_Bull_Ring</xs:referencia>
+        <xs:referencia>https://www.todoformula1.net/grandes-premios/gran-premio-austria/2025/</xs:referencia>
+        <xs:referencia>https://espndeportes.espn.com/deporte-motor/f1/circuito/_/id/600052055</xs:referencia>
+    </xs:referencias>
+
+    <xs:fotografias>
+        <xs:fotografia ruta="multimedia/foto1Circuito"/>
+        <xs:fotografia ruta="multimedia/foto2Circuito"/>
+        <xs:fotografia ruta="multimedia/foto3Circuito"/>
+    </xs:fotografias>
+
+    <xs:videos>
+        <xs:video ruta="multimedia/videoRedBullRing"/>
+    </xs:videos>
+
+    <xs:punto_origen>
+        <xs:coordenadas>
+            <xs:longitud grados="14.76521560424368"/>
+            <xs:latitud grados="47.22001591692169"/>
+            <xs:altitud metros="678.2478645956382"/>
+        </xs:coordenadas>
+    </xs:punto_origen>
+
+    <xs:tramos>
+
+        <xs:tramo>
+            <xs:dist_tramo metros="318.22"/>
+            <xs:dist_tramo metros="318.22"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76115133176864"/>
+                <xs:latitud grados="47.21927094367346"/>
+                <xs:altitud metros="691.8489825330148"/>
+            </xs:coordenadas>
+            <xs:num_sector>1</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="20.85"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76087997681679"/>
+                <xs:latitud grados="47.21930271429689"/>
+                <xs:altitud metros="693.3580148352983"/>
+            </xs:coordenadas>
+            <xs:num_sector>2</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="54.66"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76052640200318"/>
+                <xs:latitud grados="47.21973110424997"/>
+                <xs:altitud metros="695.7985198093514"/>
+            </xs:coordenadas>
+            <xs:num_sector>3</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="337.58"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.75805057409833"/>
+                <xs:latitud grados="47.2222586405266"/>
+                <xs:altitud metros="699.3744078460846"/>
+            </xs:coordenadas>
+            <xs:num_sector>4</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="254.92"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.75658805461903"/>
+                <xs:latitud grados="47.22432354985205"/>
+                <xs:altitud metros="707.6600732677192"/>
+            </xs:coordenadas>
+            <xs:num_sector>5</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="271.9"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.7541186937087"/>
+                <xs:latitud grados="47.22607801113588"/>
+                <xs:altitud metros="740.8066917569502"/>
+            </xs:coordenadas>
+            <xs:num_sector>6</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="15.09"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.7540788246706"/>
+                <xs:latitud grados="47.22620866843252"/>
+                <xs:altitud metros="743.5483884180859"/>
+            </xs:coordenadas>
+            <xs:num_sector>7</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="18.66"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.75429891276979"/>
+                <xs:latitud grados="47.22628389317625"/>
+                <xs:altitud metros="744.9617374789311"/>
+            </xs:coordenadas>
+            <xs:num_sector>8</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="88.2"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.75545866513489"/>
+                <xs:latitud grados="47.22637789158615"/>
+                <xs:altitud metros="745.5060931372193"/>
+            </xs:coordenadas>
+            <xs:num_sector>9</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="148.44"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.75742097071788"/>
+                <xs:latitud grados="47.2263211270186"/>
+                <xs:altitud metros="739.320860005282"/>
+            </xs:coordenadas>
+            <xs:num_sector>10</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="312.91"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76149045056084"/>
+                <xs:latitud grados="47.22580369688154"/>
+                <xs:altitud metros="726.2137632049937"/>
+            </xs:coordenadas>
+            <xs:num_sector>11</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="214.23"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76432045060523"/>
+                <xs:latitud grados="47.22571172104929"/>
+                <xs:altitud metros="715.25738003614"/>
+            </xs:coordenadas>
+            <xs:num_sector>12</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="26.65"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76463036716403"/>
+                <xs:latitud grados="47.22559782950773"/>
+                <xs:altitud metros="713.7353155938795"/>
+            </xs:coordenadas>
+            <xs:num_sector>13</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="31.92"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76462924186561"/>
+                <xs:latitud grados="47.2253109378517"/>
+                <xs:altitud metros="712.6428788884541"/>
+            </xs:coordenadas>
+            <xs:num_sector>14</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="78.71"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.7639843479568"/>
+                <xs:latitud grados="47.22475601764059"/>
+                <xs:altitud metros="708.6683048790032"/>
+            </xs:coordenadas>
+            <xs:num_sector>15</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="84.11"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.7629937466919"/>
+                <xs:latitud grados="47.22441074294075"/>
+                <xs:altitud metros="706.6256049152801"/>
+            </xs:coordenadas>
+            <xs:num_sector>16</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="62.12"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76217597933347"/>
+                <xs:latitud grados="47.22435089614827"/>
+                <xs:altitud metros="707.4006853872098"/>
+            </xs:coordenadas>
+            <xs:num_sector>17</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="201.73"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.7595265647842"/>
+                <xs:latitud grados="47.22458084851339"/>
+                <xs:altitud metros="710.6535259580859"/>
+            </xs:coordenadas>
+            <xs:num_sector>18</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="50.77"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.75892498298161"/>
+                <xs:latitud grados="47.22437697853507"/>
+                <xs:altitud metros="710.1967742295958"/>
+            </xs:coordenadas>
+            <xs:num_sector>19</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="43.27"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.7586392258845"/>
+                <xs:latitud grados="47.22404021077685"/>
+                <xs:altitud metros="708.2086445513564"/>
+            </xs:coordenadas>
+            <xs:num_sector>20</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="44.29"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.75867613583948"/>
+                <xs:latitud grados="47.22364584741324"/>
+                <xs:altitud metros="702.6816565087615"/>
+            </xs:coordenadas>
+            <xs:num_sector>21</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="167.71"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.75975664973427"/>
+                <xs:latitud grados="47.22233178887853"/>
+                <xs:altitud metros="691.8723090990948"/>
+            </xs:coordenadas>
+            <xs:num_sector>22</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="36.56"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76012509718067"/>
+                <xs:latitud grados="47.22211875840466"/>
+                <xs:altitud metros="690.5971563456992"/>
+            </xs:coordenadas>
+            <xs:num_sector>23</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="46.73"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76073601801059"/>
+                <xs:latitud grados="47.22205232939849"/>
+                <xs:altitud metros="689.731221313954"/>
+            </xs:coordenadas>
+            <xs:num_sector>24</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="48.15"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76131276244496"/>
+                <xs:latitud grados="47.22223692961853"/>
+                <xs:altitud metros="689.8640756162191"/>
+            </xs:coordenadas>
+            <xs:num_sector>25</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="89.27"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.7621046449687"/>
+                <xs:latitud grados="47.22283209963321"/>
+                <xs:altitud metros="693.4272215130676"/>
+            </xs:coordenadas>
+            <xs:num_sector>26</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="91.91"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76324935150775"/>
+                <xs:latitud grados="47.22311286032413"/>
+                <xs:altitud metros="693.0853042573478"/>
+            </xs:coordenadas>
+            <xs:num_sector>27</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="471.13"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76948660093334"/>
+                <xs:latitud grados="47.22319337470309"/>
+                <xs:altitud metros="697.4632619091365"/>
+            </xs:coordenadas>
+            <xs:num_sector>28</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="47.88"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76997309028219"/>
+                <xs:latitud grados="47.22291758890059"/>
+                <xs:altitud metros="696.0469446570706"/>
+            </xs:coordenadas>
+            <xs:num_sector>29</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="169.76"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.7706386543334"/>
+                <xs:latitud grados="47.22146255316486"/>
+                <xs:altitud metros="685.2975957538189"/>
+            </xs:coordenadas>
+            <xs:num_sector>30</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="19.33"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.77059579134166"/>
+                <xs:latitud grados="47.2212919181921"/>
+                <xs:altitud metros="683.5524882749664"/>
+            </xs:coordenadas>
+            <xs:num_sector>31</xs:num_sector>
+        </xs:tramo>
+        <xs:tramo>
+            <xs:dist_tramo metros="107.49"/>
+            <xs:coordenadas>
+                <xs:longitud grados="14.76935567382988"/>
+                <xs:latitud grados="47.22081833301654"/>
+                <xs:altitud metros="680.2749726781811"/>
+            </xs:coordenadas>
+            <xs:num_sector>32</xs:num_sector>
+        </xs:tramo>
+    </xs:tramos>
+
+    <xs:vencedor>
+        <xs:nombre>Marc Márquez</xs:nombre>
+        <xs:tiempo>42:11.006</xs:tiempo>
+    </xs:vencedor>
+
+    <xs:top_3_tras_carrera>
+        <xs:piloto>Marc Márquez — 418 puntos</xs:piloto>
+        <xs:piloto>Álex Márquez — 276 puntos</xs:piloto>
+        <xs:piloto>Francesco Bagnaia — 221 puntos</xs:piloto>
+    </xs:top_3_tras_carrera>
+</xs:circuito>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+
+<circuito nombre = "Red_Bull_Ring_Spielberg">
+    <longitud_circuito metros="4318"></longitud_circuito>
+    <anchura metros="13"></anchura>
+    <fecha>17-8-2025</fecha>
+    <hora_española>15:00</hora_española>
+    <num_vueltas>71</num_vueltas>
+    <localidad_mas_proxima>Spielberg, Estiria, Austria</localidad_mas_proxima>
+    <pais>Austria</pais>
+    <patrocinador>MSC Cruises Austrian Grand Prix</patrocinador>
+
+    <referencias>
+        <referencia>https://en.wikipedia.org/wiki/Red_Bull_Ring?utm_source=chatgpt.com</referencia>
+        <referencia>https://www.todoformula1.net/grandes-premios/gran-premio-austria/2025/?utm_source=chatgpt.com</referencia>
+        <referencia>https://espndeportes.espn.com/deporte-motor/f1/circuito/_/id/600052055?utm_source=chatgpt.com</referencia>
+    </referencias>
+
+    <fotografias>
+        <fotografia ruta="multimedia/foto1Circuito"></fotografia>
+        <fotografia ruta="multimedia/foto2Circuito"></fotografia>
+        <fotografia ruta="multimedia/foto3Circuito"></fotografia>
+    </fotografias>
+
+    <videos>
+        <video ruta="multimedia/videoRedBullRing"></video>
+    </videos>
+
+    <punto_origen>
+        <coordenadas>
+            <longitud grados="14.76521560424368"></longitud>
+            <latitud grados="47.22001591692169"></latitud>
+            <altitud metros="678.2478645956382"></altitud>
+        </coordenadas>
+    </punto_origen>
+
+    <tramos>
+        <tramo>
+            <dist_tramo metros="318.22"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76115133176864"></longitud>
+                <latitud grados="47.21927094367346"></latitud>
+                <altitud metros="691.8489825330148"></altitud>
+            </coordenadas>
+            <num_sector>1</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="20.85"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76087997681679"></longitud>
+                <latitud grados="47.21930271429689"></latitud>
+                <altitud metros="693.3580148352983"></altitud>
+            </coordenadas>
+            <num_sector>2</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="54.66"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76052640200318"></longitud>
+                <latitud grados="47.21973110424997"></latitud>
+                <altitud metros="695.7985198093514"></altitud>
+            </coordenadas>
+            <num_sector>3</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="337.58"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.75805057409833"></longitud>
+                <latitud grados="47.2222586405266"></latitud>
+                <altitud metros="699.3744078460846"></altitud>
+            </coordenadas>
+            <num_sector>4</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="254.92"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.75658805461903"></longitud>
+                <latitud grados="47.22432354985205"></latitud>
+                <altitud metros="707.6600732677192"></altitud>
+            </coordenadas>
+            <num_sector>5</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="271.90"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.7541186937087"></longitud>
+                <latitud grados="47.22607801113588"></latitud>
+                <altitud metros="740.8066917569502"></altitud>
+            </coordenadas>
+            <num_sector>6</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="15.09"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.7540788246706"></longitud>
+                <latitud grados="47.22620866843252"></latitud>
+                <altitud metros="743.5483884180859"></altitud>
+            </coordenadas>
+            <num_sector>7</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="18.66"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.75429891276979"></longitud>
+                <latitud grados="47.22628389317625"></latitud>
+                <altitud metros="744.9617374789311"></altitud>
+            </coordenadas>
+            <num_sector>8</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="88.20"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.75545866513489"></longitud>
+                <latitud grados="47.22637789158615"></latitud>
+                <altitud metros="745.5060931372193"></altitud>
+            </coordenadas>
+            <num_sector>9</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="148.44"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.75742097071788"></longitud>
+                <latitud grados="47.2263211270186"></latitud>
+                <altitud metros="739.320860005282"></altitud>
+            </coordenadas>
+            <num_sector>10</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="312.91"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76149045056084"></longitud>
+                <latitud grados="47.22580369688154"></latitud>
+                <altitud metros="726.2137632049937"></altitud>
+            </coordenadas>
+            <num_sector>11</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="214.23"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76432045060523"></longitud>
+                <latitud grados="47.22571172104929"></latitud>
+                <altitud metros="715.25738003614"></altitud>
+            </coordenadas>
+            <num_sector>12</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="26.65"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76463036716403"></longitud>
+                <latitud grados="47.22559782950773"></latitud>
+                <altitud metros="713.7353155938795"></altitud>
+            </coordenadas>
+            <num_sector>13</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="31.92"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76462924186561"></longitud>
+                <latitud grados="47.2253109378517"></latitud>
+                <altitud metros="712.6428788884541"></altitud>
+            </coordenadas>
+            <num_sector>14</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="78.71"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.7639843479568"></longitud>
+                <latitud grados="47.22475601764059"></latitud>
+                <altitud metros="708.6683048790032"></altitud>
+            </coordenadas>
+            <num_sector>15</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="84.11"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.7629937466919"></longitud>
+                <latitud grados="47.22441074294075"></latitud>
+                <altitud metros="706.6256049152801"></altitud>
+            </coordenadas>
+            <num_sector>16</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="62.12"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76217597933347"></longitud>
+                <latitud grados="47.22435089614827"></latitud>
+                <altitud metros="707.4006853872098"></altitud>
+            </coordenadas>
+            <num_sector>17</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="201.73"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.7595265647842"></longitud>
+                <latitud grados="47.22458084851339"></latitud>
+                <altitud metros="710.6535259580859"></altitud>
+            </coordenadas>
+            <num_sector>18</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="50.77"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.75892498298161"></longitud>
+                <latitud grados="47.22437697853507"></latitud>
+                <altitud metros="710.1967742295958"></altitud>
+            </coordenadas>
+            <num_sector>19</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="43.27"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.7586392258845"></longitud>
+                <latitud grados="47.22404021077685"></latitud>
+                <altitud metros="708.2086445513564"></altitud>
+            </coordenadas>
+            <num_sector>20</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="44.29"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.75867613583948"></longitud>
+                <latitud grados="47.22364584741324"></latitud>
+                <altitud metros="702.6816565087615"></altitud>
+            </coordenadas>
+            <num_sector>21</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="167.71"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.75975664973427"></longitud>
+                <latitud grados="47.22233178887853"></latitud>
+                <altitud metros="691.8723090990948"></altitud>
+            </coordenadas>
+            <num_sector>22</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="36.56"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76012509718067"></longitud>
+                <latitud grados="47.22211875840466"></latitud>
+                <altitud metros="690.5971563456992"></altitud>
+            </coordenadas>
+            <num_sector>23</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="46.73"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76073601801059"></longitud>
+                <latitud grados="47.22205232939849"></latitud>
+                <altitud metros="689.7312213139541"></altitud>
+            </coordenadas>
+            <num_sector>24</num_sector>
+        </tramo>
+
+        <tramo>
+            <dist_tramo metros="48.15"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76131276244496"></longitud>
+                <latitud grados="47.22223692961853"></latitud>
+                <altitud metros="689.8640756162191"></altitud>
+            </coordenadas>
+            <num_sector>25</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="89.27"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.7621046449687"></longitud>
+                <latitud grados="47.22283209963321"></latitud>
+                <altitud metros="693.4272215130676"></altitud>
+            </coordenadas>
+            <num_sector>26</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="91.91"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76324935150775"></longitud>
+                <latitud grados="47.22311286032413"></latitud>
+                <altitud metros="693.0853042573478"></altitud>
+            </coordenadas>
+            <num_sector>27</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="471.13"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76948660093334"></longitud>
+                <latitud grados="47.22319337470309"></latitud>
+                <altitud metros="697.4632619091365"></altitud>
+            </coordenadas>
+            <num_sector>28</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="47.88"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76997309028219"></longitud>
+                <latitud grados="47.22291758890059"></latitud>
+                <altitud metros="696.0469446570706"></altitud>
+            </coordenadas>
+            <num_sector>29</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="169.76"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.7706386543334"></longitud>
+                <latitud grados="47.22146255316486"></latitud>
+                <altitud metros="685.2975957538189"></altitud>
+            </coordenadas>
+            <num_sector>30</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="19.33"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.77059579134166"></longitud>
+                <latitud grados="47.2212919181921"></latitud>
+                <altitud metros="683.5524882749664"></altitud>
+            </coordenadas>
+            <num_sector>31</num_sector>
+        </tramo>
+        <tramo>
+            <dist_tramo metros="107.49"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76935567382988"></longitud>
+                <latitud grados="47.22081833301654"></latitud>
+                <altitud metros="680.2749726781811"></altitud>
+            </coordenadas>
+            <num_sector>32</num_sector>
+        </tramo>
+    </tramos>
+
+    <vencedor>
+        <nombre>Marc Márquez</nombre>
+        <tiempo>42:11.006 (28 vueltas)</tiempo>
+    </vencedor>
+
+    <top_3_tras_carrera>
+        <piloto>Marc Márquez — 418 puntos</piloto>
+        <piloto>Álex Márquez — 276 puntos</piloto>
+        <piloto>Francesco Bagnaia — 221 puntos</piloto>
+    </top_3_tras_carrera>
+</circuito>

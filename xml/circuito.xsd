@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    xmlns="http://www.uniovi.es"
+    targetNamespace="http://www.uniovi.es"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+  <!-- Elemento raíz -->
+  <xs:element name="circuito">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="longitud_circuito"/>
+        <xs:element ref="anchura"/>
+        <xs:element ref="fecha"/>
+        <xs:element ref="hora_española"/>
+        <xs:element ref="num_vueltas"/>
+        <xs:element ref="localidad_mas_proxima"/>
+        <xs:element ref="pais"/>
+        <xs:element ref="patrocinador" minOccurs="0"/>
+        <xs:element ref="referencias"/>
+        <xs:element ref="fotografias"/>
+        <xs:element ref="videos" minOccurs="0"/>
+        <xs:element ref="punto_origen"/>
+        <xs:element ref="tramos"/>
+        <xs:element ref="vencedor"/>
+        <xs:element ref="top_3_tras_carrera"/>
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Longitud del circuito: valor decimal + atributo metros decimal con rango -->
+  <xs:element name="longitud_circuito">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="metros">
+            <xs:simpleType>
+              <xs:restriction base="xs:decimal">
+                <xs:minInclusive value="50.0"/>
+                <xs:maxInclusive value="10000.0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Anchura del circuito -->
+  <xs:element name="anchura">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="metros">
+            <xs:simpleType>
+              <xs:restriction base="xs:decimal">
+                <xs:minInclusive value="5.0"/>
+                <xs:maxInclusive value="60.0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Fecha y hora -->
+  <xs:element name="fecha" type="xs:date"/>
+  <xs:element name="hora_española" type="xs:time"/>
+
+  <!-- Número de vueltas -->
+  <xs:element name="num_vueltas">
+    <xs:simpleType>
+      <xs:restriction base="xs:positiveInteger">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="200"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+	<xs:element name="localidad_mas_proxima" type="xs:string" />
+	<xs:element name="pais" type="xs:string" />
+	<xs:element name="patrocinador" type="xs:string" />
+
+  <!-- Referencias: al menos una -->
+  <xs:element name="referencias">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="referencia" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="referencia" type="xs:string"/>
+
+  <!-- Fotografías y videos: ruta como anyURI -->
+  <xs:element name="fotografias">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="fotografia" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="fotografia">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="ruta" type="xs:anyURI" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="videos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="video" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="video">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="ruta" type="xs:anyURI" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Punto de origen: coordenadas -->
+  <xs:element name="punto_origen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="coordenadas"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Tramos repetibles -->
+  <xs:element name="tramos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tramo" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="tramo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="dist_tramo"/>
+        <xs:element ref="coordenadas"/>
+        <xs:element ref="num_sector"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="dist_tramo">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="metros">
+            <xs:simpleType>
+              <xs:restriction base="xs:decimal">
+                <xs:minInclusive value="1.0"/>
+                <xs:maxInclusive value="10000.0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="num_sector">
+    <xs:simpleType>
+      <xs:restriction base="xs:positiveInteger">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="10"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <!-- Coordenadas: longitud, latitud, altitud con restricciones numéricas -->
+  <xs:element name="coordenadas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="longitud"/>
+        <xs:element ref="latitud"/>
+        <xs:element ref="altitud"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="longitud">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="grados" use="optional">
+            <xs:simpleType>
+              <xs:restriction base="xs:decimal">
+                <xs:minInclusive value="-180.0"/>
+                <xs:maxInclusive value="180.0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="latitud">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="grados" use="optional">
+            <xs:simpleType>
+              <xs:restriction base="xs:decimal">
+                <xs:minInclusive value="-90.0"/>
+                <xs:maxInclusive value="90.0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="altitud">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="metros" use="optional">
+            <xs:simpleType>
+              <xs:restriction base="xs:decimal">
+                <xs:minInclusive value="-500.0"/>
+                <xs:maxInclusive value="9000.0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Vencedor: nombre + tiempo (duración) -->
+  <xs:element name="vencedor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="tiempo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="nombre" type="xs:string"/>
+
+  <!-- Usamos xs:duration para tiempos de carrera (PT1H23M45.67S) -->
+  <xs:element name="tiempo" type="xs:duration"/>
+
+  <!-- Top 3 tras carrera: explicitamos 3 pilotos -->
+  <xs:element name="top_3_tras_carrera">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="piloto" minOccurs="3" maxOccurs="3"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="piloto" type="xs:string"/>
+
+</xs:schema>

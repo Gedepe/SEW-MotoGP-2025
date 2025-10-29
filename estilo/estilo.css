@@ -4,14 +4,18 @@
 
 /* Especificidad: 0,0,1 */
 body {
-  background-color: #433d35;
+  background-color: #29241e;
   color: #efe5c9;
 }
 
 /* Especificidad: 0,0,1 */
 header {
-  background-color: #29241e;
+  background-color: #1c160f;
   color: #efe5c9;
+}
+
+a {
+  color: #e5d19c;
 }
 
 header a{

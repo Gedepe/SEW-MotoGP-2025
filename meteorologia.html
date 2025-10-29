@@ -1,40 +1,54 @@
 <!DOCTYPE HTML>
+
 <html lang="es">
-<head>
-    <!-- Datos que describen el documento -->
-    <meta charset="UTF-8" />
-    <title>MotoGP-Meteorologia</title>
-	<meta name ="author" content ="Pedro Diaz Gonzalez" />
-	<meta name ="description" content ="Meteorologia del proyecto MotoGP" />
-	<meta name ="keywords" content ="MotoGP, Moto" />
-	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <link rel="icon" href="multimedia/favicon_motogp.ico" type="image/x-icon">
-</head>
+    <head>
+        <!-- Datos que describen el documento -->
+        <meta charset="UTF-8" />
+        <title>MotoGP-Meteorologia</title>
+        <meta name="author" content="Pedro Diaz Gonzalez" />
+        <meta name="description" content="Meteorologia del proyecto MotoGP" />
+        <meta name="keywords" content="MotoGP, Moto" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+        <link rel="icon" href="multimedia/favicon_motogp.ico" type="image/x-icon">
+        <script src="js/ciudad.js"></script>
+    </head>
 
+    <body>
+        <header>
+            <!--Titulo-->
+            <h1><a href="index.html" title="Enlace a la página principal del proyecto">MotoGP Desktop</a></h1>
 
+            <!--Pestañas de la página-->
+            <nav>
+                <a href="index.html" title="Información general del proyecto">Inicio</a>
+                <a href="piloto.html" title="Información del piloto">Piloto</a>
+                <a href="circuito.html" title="Información del circuito">Circuito</a>
+                <a href="meteorologia.html" title="Información de la meteorología" class="active">Meteorología</a>
+                <a href="clasificaciones.html" title="Información de la clasificación">Clasificaciones</a>
+                <a href="juegos.html" title="Información de los juegos">Juegos</a>
+                <a href="ayuda.html" title="Información de la ayuda">Ayuda</a>
+            </nav>
+        </header>
+        
+        <p>Estás en: <a href="index.html">Inicio</a> &gt;&gt; <strong>Meteorología</strong></p>
+        
+        <h2>Meteorología del proyecto MotoGP</h2>
+        <p>En desarrollo</p>
 
-<body>
-    <header>
-        <!--Titulo-->
-        <h1><a href="index.html" title="Enlaze a la pagina principal del proyecto">MotoGP Desktop</a></h1>
+        <!--Script que crea el objeto Ciudad e imprime la información -->
+        <script>
+            "use strict";
 
-        <!--Pestañas de la pagina-->
-        <nav>
-            <a href="index.html" title="Información general del proyecto">Inicio</a>
-            <a href="piloto.html" title="Información del piloto">Piloto</a>
-            <a href="circuito.html" title="Información del circuito">Circuito</a>
-            <a href="meteorologia.html" title="Información de la meteorología" class="active">Meteorología</a>
-            <a href="clasificaciones.html" title="Información de la clasificación">Clasificaciones</a>
-            <a href="juegos.html" title="Información de los juegos">Juegos</a>
-            <a href="ayuda.html" title="Información de la ayuda">Ayuda</a>
-        </nav>
-    </header>
-    
-    <p>Estás en: <a href="index.html">Inicio</a> &gt;&gt; <strong>Meteorologia</strong></p>
-    
-    <h2>Meteorologia del proyecto MotoGP</h2>
-    <p>en desarrollo</p>
-</body>
+            const ciudadCircuito = new Ciudad("Spielberg", "Austria", "spielbergense");
+
+            ciudadCircuito.inicializar(5349, { lat: 47.208524346169135, lon: 14.79965648564834 });
+
+            document.write(`<h3>${ciudadCircuito.getNombre()}</h3>`);
+            document.write(`<p>${ciudadCircuito.getPais()}</p>`);
+            document.write(ciudadCircuito.getInfoSecundaria());
+            ciudadCircuito.mostrarCoordenadas();
+        </script>
+    </body>
 </html>

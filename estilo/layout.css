@@ -41,7 +41,7 @@ nav a {
     text-align: left;
   }
 
-  .migas {
+  header + p {
     display: none;
   }
 
