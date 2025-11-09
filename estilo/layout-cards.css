@@ -17,6 +17,13 @@ main > h2 {
     margin-bottom: 1rem;
 }
 
+
+main > p {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 /* Cada carta (article) */
 main > article {
     width: 90%;

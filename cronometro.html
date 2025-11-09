@@ -4,14 +4,15 @@
 <head>
     <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
-    <title>MotoGP-Juegos</title>
+    <title>MotoGP-Cronometro</title>
 	<meta name ="author" content ="Pedro Diaz Gonzalez" />
-	<meta name ="description" content ="Juegos del proyecto MotoGP" />
+	<meta name ="description" content ="Cronometro para juego de memoria del proyecto MotoGP" />
 	<meta name ="keywords" content ="MotoGP, Moto" />
 	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/favicon_motogp.ico" type="image/x-icon">
+    <script src="js/cronometro.js" defer></script>
 </head>
 
 <body>
@@ -26,21 +27,28 @@
             <a href="circuito.html" title="Información del circuito">Circuito</a>
             <a href="meteorologia.html" title="Información de la meteorología">Meteorología</a>
             <a href="clasificaciones.html" title="Información de la clasificación">Clasificaciones</a>
-            <a href="juegos.html" title="Información de los juegos" class="active">Juegos</a>
+            <a href="juegos.html" title="Información de los juegos">Juegos</a>
             <a href="ayuda.html" title="Información de la ayuda">Ayuda</a>
         </nav>
     </header>
-    
-    <p>Estás en: <a href="index.html">Inicio</a> &gt;&gt; <strong>Juegos</strong></p>
-    
-    <h2>Juegos del proyecto MotoGP</h2>
-    <ul>
-        <li>
-            <a href="memoria.html" title="Juego de memoria con cartas">Juego de memoria con cartas</a>
-        </li>
-        <li>
-            <a href="cronometro.html" title="Cronómetro">Cronómetro para juego de cartas</a>
-        </li>
-    </ul>
+
+    <p>Estás en: <a href="index.html">Inicio</a> &gt;&gt; <a href="juegos.html">Juegos</a> &gt;&gt; <strong>Cronómetro</strong></p>
+
+    <script defer>
+        document.addEventListener("DOMContentLoaded", () => {
+            window.cronometro = new Cronometro();
+        });
+    </script>
+
+    <h1>Cronometro de MotoGP</h1>
+
+    <main>
+        <h2>Cronometro:</h2>
+        <p>00:00.0</p>
+        <button onclick="cronometro.arrancar()">Arrancar</button>
+        <button onclick="cronometro.parar()">Parar</button>
+        <button onclick="cronometro.reiniciar()">Reiniciar</button>
+        <p>Elige la acción sobre el cronómetro</p>
+    </main>
 </body>
 </html>
