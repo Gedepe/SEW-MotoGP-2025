@@ -40,7 +40,6 @@
 
         <xs:tramo>
             <xs:dist_tramo metros="318.22"/>
-            <xs:dist_tramo metros="318.22"/>
             <xs:coordenadas>
                 <xs:longitud grados="14.76115133176864"/>
                 <xs:latitud grados="47.21927094367346"/>
@@ -331,7 +330,7 @@
 
     <xs:vencedor>
         <xs:nombre>Marc Márquez</xs:nombre>
-        <xs:tiempo>42:11.006</xs:tiempo>
+        <xs:tiempo>PT42M11.006S</xs:tiempo>
     </xs:vencedor>
 
     <xs:top_3_tras_carrera>
