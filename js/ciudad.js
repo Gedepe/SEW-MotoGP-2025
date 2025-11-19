@@ -32,6 +32,8 @@ class Ciudad {
     }
 
     mostrarCoordenadas() {
-        document.write(`<p>Coordenadas de ${this.nombre}: lat=${this.coordenadas.lat}, lon=${this.coordenadas.lon}</p>`);
+        const p = document.createElement("p");
+        p.textContent = `Coordenadas de ${this.nombre}: lat=${this.coordenadas.lat}, lon=${this.coordenadas.lon}`;
+        document.querySelector("main").appendChild(p);
     }
 }

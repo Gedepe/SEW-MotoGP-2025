@@ -325,6 +325,15 @@
             </coordenadas>
             <num_sector>32</num_sector>
         </tramo>
+        <tramo>
+            <dist_tramo metros="318.22"></dist_tramo>
+            <coordenadas>
+                <longitud grados="14.76521560424368"></longitud>
+                <latitud grados="47.22001591692169"></latitud>
+                <altitud metros="678.2478645956382"></altitud>
+            </coordenadas>
+            <num_sector>1</num_sector>
+        </tramo>
     </tramos>
 
     <vencedor>

@@ -12,7 +12,6 @@
         <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
         <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
         <link rel="icon" href="multimedia/favicon_motogp.ico" type="image/x-icon">
-        <script src="js/ciudad.js"></script>
     </head>
 
     <body>
@@ -34,21 +33,32 @@
         
         <p>Estás en: <a href="index.html">Inicio</a> &gt;&gt; <strong>Meteorología</strong></p>
         
-        <h2>Meteorología del proyecto MotoGP</h2>
-        <p>En desarrollo</p>
+        <main>
+            <h2>Meteorología del proyecto MotoGP</h2>
+        </main>
 
-        <!--Script que crea el objeto Ciudad e imprime la información -->
-        <script>
-            "use strict";
+        <script src="js/ciudad.js"></script>
+    <script>
+        "use strict";
 
-            const ciudadCircuito = new Ciudad("Spielberg", "Austria", "spielbergense");
+        const ciudadCircuito = new Ciudad("Spielberg", "Austria", "spielbergense");
+        ciudadCircuito.inicializar(5349, { lat: 47.208524346169135, lon: 14.79965648564834 });
 
-            ciudadCircuito.inicializar(5349, { lat: 47.208524346169135, lon: 14.79965648564834 });
+        const h3 = document.createElement("h3");
+        h3.textContent = ciudadCircuito.getNombre();
 
-            document.write(`<h3>${ciudadCircuito.getNombre()}</h3>`);
-            document.write(`<p>${ciudadCircuito.getPais()}</p>`);
-            document.write(ciudadCircuito.getInfoSecundaria());
-            ciudadCircuito.mostrarCoordenadas();
-        </script>
+        const p = document.createElement("p");
+        p.textContent = ciudadCircuito.getPais();
+
+        const div = document.createElement("div");
+        div.innerHTML = ciudadCircuito.getInfoSecundaria();
+
+        const main = document.querySelector("main");
+        main.appendChild(h3);
+        main.appendChild(p);
+        main.appendChild(div);
+        
+        ciudadCircuito.mostrarCoordenadas();
+    </script>
     </body>
 </html>
